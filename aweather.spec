@@ -14,6 +14,7 @@ Patch2:		aweather-0.6.1-mdv-desktop.patch
 BuildRequires:	grits-devel >= 0.6
 BuildRequires:	rsl-devel >= 1.41
 BuildRequires:  glib2-devel
+BuildRequires:  bzip2-devel
 
 %description
 AWeather is a free/open source application which has been designed to integrate
