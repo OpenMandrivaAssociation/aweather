@@ -43,6 +43,9 @@ autoreconf
 %install
 %makeinstall_std
 
+# Remove *.la files
+rm -f %{buildroot}%{_libdir}/aweather/*.la
+
 %files
 %{_bindir}/aweather
 %{_bindir}/wsr88ddec
