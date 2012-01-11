@@ -2,14 +2,14 @@
 
 Name:		aweather
 Summary:	Real-time weather data viewer
-Version:	0.6.1
+Version:	0.6.3
 Release:	1
 License:	GPLv3+
 Group:		Sciences/Geosciences
 URL:		http://lug.rose-hulman.edu/proj/aweather/
 Source0:	http://lug.rose-hulman.edu/proj/aweather/files/%{name}-%{version}.tar.gz
-Patch0:		aweather-0.6.1-mdv-includepath.patch
-Patch1:		aweather-0.6.1-mdv-gthread.patch
+Patch0:		aweather-0.6.3-mdv-includepath.patch
+Patch1:		aweather-0.6.3-mdv-gthread.patch
 Patch2:		aweather-0.6.1-mdv-desktop.patch
 BuildRequires:	grits-devel >= 0.6
 BuildRequires:	rsl-devel >= 1.41
@@ -47,6 +47,7 @@ autoreconf
 rm -f %{buildroot}%{_libdir}/aweather/*.la
 
 %files
+%doc ChangeLog COPYING README TODO
 %{_bindir}/aweather
 %{_bindir}/wsr88ddec
 %{_libdir}/aweather/*.so
@@ -58,6 +59,6 @@ rm -f %{buildroot}%{_libdir}/aweather/*.la
 %{_datadir}/aweather/fips.txt
 %{_datadir}/aweather/logo.svg
 %{_datadir}/aweather/main.ui
-%{_defaultdocdir}/aweather/aweather.html
+%doc %{_defaultdocdir}/aweather/*.html
 %{_iconsdir}/hicolor/*/apps/aweather.*
 %{_mandir}/man1/*.1*
