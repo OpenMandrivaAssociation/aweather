@@ -1,8 +1,6 @@
-%define _disable_ld_no_undefined 1
-
 Name:		aweather
 Summary:	Real-time weather data viewer
-Version:	0.6.3
+Version:	0.7
 Release:	1
 License:	GPLv3+
 Group:		Sciences/Geosciences
@@ -11,8 +9,8 @@ Source0:	http://lug.rose-hulman.edu/proj/aweather/files/%{name}-%{version}.tar.g
 Patch0:		aweather-0.6.3-mdv-includepath.patch
 Patch1:		aweather-0.6.3-mdv-gthread.patch
 Patch2:		aweather-0.6.1-mdv-desktop.patch
-BuildRequires:	grits-devel >= 0.6
-BuildRequires:	rsl-devel >= 1.41
+BuildRequires:	grits-devel >= %{version}
+BuildRequires:	rsl-devel >= 1.42
 BuildRequires:  glib2-devel
 BuildRequires:  bzip2-devel
 
@@ -52,13 +50,6 @@ rm -f %{buildroot}%{_libdir}/aweather/*.la
 %{_bindir}/wsr88ddec
 %{_libdir}/aweather/*.so
 %{_datadir}/applications/aweather.desktop
-%dir %{_datadir}/aweather
-%dir %{_datadir}/aweather/colors
-%{_datadir}/aweather/colors/*.clr
-%{_datadir}/aweather/defaults.ini
-%{_datadir}/aweather/fips.txt
-%{_datadir}/aweather/logo.svg
-%{_datadir}/aweather/main.ui
-%doc %{_defaultdocdir}/aweather/*.html
+%{_datadir}/aweather
 %{_iconsdir}/hicolor/*/apps/aweather.*
 %{_mandir}/man1/*.1*
