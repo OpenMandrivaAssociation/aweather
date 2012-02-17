@@ -9,6 +9,7 @@ Source0:	http://lug.rose-hulman.edu/proj/aweather/files/%{name}-%{version}.tar.g
 Patch0:		aweather-0.6.3-mdv-includepath.patch
 Patch1:		aweather-0.6.3-mdv-gthread.patch
 Patch2:		aweather-0.6.1-mdv-desktop.patch
+Patch3:		aweather-0.7-mdv-linkage.patch
 BuildRequires:	grits-devel >= %{version}
 BuildRequires:	rsl-devel >= 1.42
 BuildRequires:  glib2-devel
@@ -30,6 +31,7 @@ Weather Service.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 autoreconf
 
