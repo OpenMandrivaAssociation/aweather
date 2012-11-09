@@ -1,0 +1,14 @@
+Index: aweather-0.6.3/configure.ac
+===================================================================
+--- aweather-0.6.3.orig/configure.ac
++++ aweather-0.6.3/configure.ac
+@@ -21,6 +21,9 @@ AC_CHECK_LIB(rsl, RSL_wsr88d_to_radar, R
+ AM_CONDITIONAL(HAVE_RSL, test "$RSL_LIBS" != "")
+ AC_SUBST(RSL_LIBS)
+ 
++# gthread-2.0 library
++AC_CHECK_LIB(gthread-2.0, g_thread_init)
++
+ # Test for windowing system
+ case "${host}" in
+ 	*mingw32*) SYS="WIN" ;;

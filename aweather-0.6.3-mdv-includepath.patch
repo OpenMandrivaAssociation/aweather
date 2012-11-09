@@ -1,0 +1,65 @@
+Index: aweather-0.6.3/src/plugins/level2.c
+===================================================================
+--- aweather-0.6.3.orig/src/plugins/level2.c
++++ aweather-0.6.3/src/plugins/level2.c
+@@ -19,7 +19,7 @@
+ #include <math.h>
+ #include <glib/gstdio.h>
+ #include <grits.h>
+-#include <rsl.h>
++#include <rsl/rsl.h>
+ 
+ #include "level2.h"
+ 
+Index: aweather-0.6.3/src/plugins/radar.c
+===================================================================
+--- aweather-0.6.3.orig/src/plugins/radar.c
++++ aweather-0.6.3/src/plugins/radar.c
+@@ -22,7 +22,7 @@
+ #include <gtk/gtk.h>
+ #include <gio/gio.h>
+ #include <math.h>
+-#include <rsl.h>
++#include <rsl/rsl.h>
+ 
+ #include <grits.h>
+ 
+Index: aweather-0.6.1/src/plugins/radar.h
+===================================================================
+--- aweather-0.6.1.orig/src/plugins/radar.h
++++ aweather-0.6.1/src/plugins/radar.h
+@@ -19,7 +19,7 @@
+ #define __RADAR_H__
+ 
+ #include <glib-object.h>
+-#include <rsl.h>
++#include <rsl/rsl.h>
+ 
+ #include <grits.h>
+ #include "radar-info.h"
+Index: aweather-0.6.1/src/plugins/radar-info.c
+===================================================================
+--- aweather-0.6.1.orig/src/plugins/radar-info.c
++++ aweather-0.6.1/src/plugins/radar-info.c
+@@ -15,7 +15,7 @@
+  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  */
+ 
+-#include <rsl.h>
++#include <rsl/rsl.h>
+ #include "radar-info.h"
+ 
+ AWeatherColormap colormaps[] = {
+Index: aweather-0.6.1/src/plugins/radar-info.h
+===================================================================
+--- aweather-0.6.1.orig/src/plugins/radar-info.h
++++ aweather-0.6.1/src/plugins/radar-info.h
+@@ -19,7 +19,7 @@
+ #define __AWEATHER_COLORMAP_H__
+ 
+ #include <glib.h>
+-#include <rsl.h>
++#include <rsl/rsl.h>
+ 
+ typedef struct {
+ 	gint     type;     // From RSL e.g. DZ_INDEX

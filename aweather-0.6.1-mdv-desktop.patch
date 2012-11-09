@@ -1,0 +1,14 @@
+Index: aweather-0.6.1/data/aweather.desktop
+===================================================================
+--- aweather-0.6.1.orig/data/aweather.desktop
++++ aweather-0.6.1/data/aweather.desktop
+@@ -2,7 +2,8 @@
+ Type=Application
+ Name=AWeather
+ Comment=Advanced weather reporting program
++Comment[ru]=Отображение сведений о погоде
+ Exec=aweather
+ Terminal=false
+ Icon=aweather
+-Categories=Education;Science;Geoscience
++Categories=Education;Science;Geoscience;

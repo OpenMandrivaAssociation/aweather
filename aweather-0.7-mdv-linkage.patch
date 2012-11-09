@@ -1,0 +1,13 @@
+Index: aweather-0.7/src/plugins/Makefile.am
+===================================================================
+--- aweather-0.7.orig/src/plugins/Makefile.am
++++ aweather-0.7/src/plugins/Makefile.am
+@@ -42,7 +42,7 @@ radar_la_SOURCES = \
+ radar_la_CPPFLAGS = \
+ 	-DPKGDATADIR="\"$(DOTS)$(pkgdatadir)\"" \
+ 	-I$(top_srcdir)/src
+-radar_la_LIBADD  = $(RSL_LIBS) $(GRITS_LIBS)
++radar_la_LIBADD  = $(RSL_LIBS) $(GRITS_LIBS) -lm
+ endif
+ 
+ test:
