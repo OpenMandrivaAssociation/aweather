@@ -9,7 +9,6 @@ Source0:	http://lug.rose-hulman.edu/proj/aweather/files/%{name}-%{version}.tar.g
 Patch0:		aweather-0.6.3-mdv-includepath.patch
 Patch1:		aweather-0.6.3-mdv-gthread.patch
 Patch2:		aweather-0.6.1-mdv-desktop.patch
-Patch3:		aweather-0.7-mdv-linkage.patch
 BuildRequires:	grits-devel >= %{version}
 BuildRequires:	rsl-devel >= 1.42
 BuildRequires:  glib2-devel
@@ -31,7 +30,6 @@ Weather Service.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
-%patch3 -p1
 
 autoreconf
 
@@ -55,3 +53,20 @@ rm -f %{buildroot}%{_libdir}/aweather/*.la
 %{_datadir}/aweather
 %{_iconsdir}/hicolor/*/apps/aweather.*
 %{_mandir}/man1/*.1*
+
+
+%changelog
+* Fri Feb 17 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.7-1
++ Revision: 776179
+- update to 0.7
+
+* Wed Jan 11 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.6.3-1
++ Revision: 760193
+- new version 0.6.3
+- Remove *.la files, required for backporting
+
+* Thu Dec 22 2011 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.6.1-1
++ Revision: 744369
+- BR bzip2-devel
+- imported package aweather
+
