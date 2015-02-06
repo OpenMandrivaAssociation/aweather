@@ -1,7 +1,7 @@
 Name:		aweather
 Summary:	Real-time weather data viewer
 Version:	0.7
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		Sciences/Geosciences
 URL:		http://lug.rose-hulman.edu/proj/aweather/
