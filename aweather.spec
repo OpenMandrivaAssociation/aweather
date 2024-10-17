@@ -4,7 +4,7 @@ Version:	0.7
 Release:	2
 License:	GPLv3+
 Group:		Sciences/Geosciences
-URL:		http://lug.rose-hulman.edu/proj/aweather/
+URL:		https://lug.rose-hulman.edu/proj/aweather/
 Source0:	http://lug.rose-hulman.edu/proj/aweather/files/%{name}-%{version}.tar.gz
 Patch0:		aweather-0.6.3-mdv-includepath.patch
 Patch1:		aweather-0.6.3-mdv-gthread.patch
