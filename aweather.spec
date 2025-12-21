@@ -9,6 +9,11 @@ Source0:	http://lug.rose-hulman.edu/proj/aweather/files/%{name}-%{version}.tar.g
 Patch0:		aweather-0.6.3-mdv-includepath.patch
 Patch1:		aweather-0.6.3-mdv-gthread.patch
 Patch2:		aweather-0.6.1-mdv-desktop.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	grits-devel >= %{version}
 BuildRequires:	rsl-devel >= 1.42
 BuildRequires:  glib2-devel
